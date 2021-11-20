@@ -58,21 +58,99 @@ class MyHome extends StatelessWidget {
             ),
             child: Row(
               children: <Widget>[
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[Text('data'), Text('data')],
+                Container(
+                  width: 100,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text('data'),
+                      Text('data'),
+                    ],
+                  ),
                 ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text('data'),
-                    Column(
-                      children: <Widget>[
-                        Text('data'),
-                        Row(
-                          children: <Widget>[Text('data'), Text('data')],
-                        )
-                      ],
+                    Container(
+                      width: 290,
+                      height: 300,
+                      child: Image.asset('assets/images/image1.png'),
+                      // child: Image.network(
+                      //     'https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png'),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 40),
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 12),
+                            width: 200,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'Well Mounted Plant Glass Pos',
+                                  style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                      color: Color(0xff516D8F)),
+                                ),
+                                Text(
+                                  'Plant in a glass bowl. It can besmounted on a wall or ceilign (Holders included)',
+                                  style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontSize: 12,
+                                      color: Color(0xff516D8F)),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            width: 250,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: <Widget>[
+                                Container(
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 3, horizontal: 30),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff1CA953),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(
+                                        6,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Text(
+                                    'Rp. 9500',
+                                    style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                  ),
+                                ),
+                                Container(
+                                    padding: EdgeInsets.symmetric(
+                                        vertical: 3, horizontal: 6),
+                                    decoration: BoxDecoration(
+                                      color: Color(0xff1CA953),
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(
+                                          6,
+                                        ),
+                                      ),
+                                    ),
+                                    child: Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.white,
+                                    )),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
