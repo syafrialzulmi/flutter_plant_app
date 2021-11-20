@@ -4,4 +4,5 @@ A new Flutter project.
 
 ## Getting Started
 
-![Plan1](/assets/images/ss_plant_1.png)
+<!-- ![Plan1](/assets/images/ss_plant_1.png) -->
+<img src="/assets/images/ss_plant_1.png" alt="drawing" width="200"/>
