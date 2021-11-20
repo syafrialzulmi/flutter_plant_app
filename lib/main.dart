@@ -63,8 +63,37 @@ class MyHome extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text('data'),
-                      Text('data'),
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 7, horizontal: 12),
+                        decoration: BoxDecoration(
+                          color: Color(0xff1CA953),
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(16),
+                              topRight: Radius.circular(16)),
+                        ),
+                        child: Icon(
+                          Icons.favorite_outline,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 7, horizontal: 12),
+                        decoration: BoxDecoration(
+                          color: Color(0xff1CA953),
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(16),
+                              topRight: Radius.circular(16)),
+                        ),
+                        child: Icon(
+                          Icons.thumb_up_outlined,
+                          color: Colors.white,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -132,20 +161,21 @@ class MyHome extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                    padding: EdgeInsets.symmetric(
-                                        vertical: 3, horizontal: 6),
-                                    decoration: BoxDecoration(
-                                      color: Color(0xff1CA953),
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(
-                                          6,
-                                        ),
+                                  padding: EdgeInsets.symmetric(
+                                      vertical: 3, horizontal: 6),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xff1CA953),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(
+                                        6,
                                       ),
                                     ),
-                                    child: Icon(
-                                      Icons.arrow_forward,
-                                      color: Colors.white,
-                                    )),
+                                  ),
+                                  child: Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ],
                             ),
                           )
