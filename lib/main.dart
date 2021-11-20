@@ -103,7 +103,9 @@ class MyHome extends StatelessWidget {
                     Container(
                       width: 290,
                       height: 300,
-                      child: Image.asset('assets/images/image1.png'),
+                      child: Image.asset(
+                        'assets/images/image1.png',
+                      ),
                       // child: Image.network(
                       //     'https://upload.wikimedia.org/wikipedia/commons/9/9a/PNG_transparency_demonstration_2.png'),
                     ),
