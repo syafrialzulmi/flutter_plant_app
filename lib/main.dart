@@ -140,6 +140,117 @@ class MyHome extends StatelessWidget {
                   ),
                 ],
               ),
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Aloe Vera',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 18,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'Xerovit',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 12,
+                                color: Colors.white60,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 24),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white30),
+                            color: Color(0xff1CA953),
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(16),
+                                topRight: Radius.circular(16)),
+                          ),
+                          child: Text(
+                            'Rp. 25.000',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      'Very short - stemmed plant growing to 50-100 cm (25-40 in) tall, spreading by offsets. Have thick and fleshy leaves that hold water to sustain the palnt during a drought.',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 12,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 55),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white30),
+                            color: Color(0xff1CA953),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(
+                                6,
+                              ),
+                            ),
+                          ),
+                          child: Text(
+                            'Add TO Cart',
+                            style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 10),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white30),
+                            color: Color(0xff1CA953),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(
+                                6,
+                              ),
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
